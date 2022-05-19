@@ -132,8 +132,8 @@ ul {margin: 0; padding: 0;
 max-width: 1600px;
 margin-left: auto; margin-right: auto;
 background-image: linear-gradient(
-    (to right, rgba(47, 48, 58, 0.4), 
-    rgba(47, 48, 58, 0.4) )), url(../image/holst.jpg) ;
+    to-right , rgba(47, 48, 58, 0.4), 
+    rgba(47, 48, 58, 0.4) , url(../image/holst.jpg)) ;
 background-position: center;
 
 background-size: cover;
@@ -235,6 +235,33 @@ ul {
     margin-bottom: 0;
 }
 
+.icon::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background: #F5F4FA;
+        border-radius: 4px;
+        background-image: url() ;
+        /* background-size: contain ; */
+        background-repeat: no-repeat;
+        margin-bottom: 30px;
+        background-position: center;
+}
+.antena::before{
+    background-image: url(../images/antenna.png);
+    
+}
+
+.time::before{
+    background-image: url(../images/clock.png);
+}
+.diagramma::before{
+    background-image: url(../images/diagramma.png);
+}
+
+ .astronaft::before{
+    background-image: url(../images/astronaut.png);
+}
 .list-benefits .items+.items {
     margin-left: 30px;
 }
