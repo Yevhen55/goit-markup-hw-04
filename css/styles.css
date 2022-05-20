@@ -87,6 +87,8 @@ ul {margin: 0; padding: 0;
     color: var(--focus-hover-active-color);
 }
 
+
+
 .header-list .item {
     font-family: 'Roboto';
     font-style: normal;
@@ -183,9 +185,9 @@ background-size: cover;
     cursor: pointer;
 }
 .hero .btn {border-radius: 4px; border: 0; padding-top: 10px; padding-left: 32px; padding-right: 32px;padding-bottom: 10px; }
-  .text-hero {
+  /* .text-hero {
     background-color: var(--fon-footer-h1); 
-} 
+}  */
 
 .paint {
     padding-top: 0;
@@ -216,7 +218,9 @@ background-size: cover;
     color: var(--text-footer-textbtn);
     background-color: var(--focus-hover-active-color);
 }
+.section .hero { padding-top: 200px;
 
+}
 
 
 /* benefits */
@@ -493,10 +497,10 @@ ul {
     color: var(--second-text-color)
 }
 
-.link :last-child {
+/* .link :last-child {
     color: var(--mail-tel);
     text-decoration: none;
-}
+} */
 .footer-list {
     font-style: initial;
      margin-bottom: 0;
