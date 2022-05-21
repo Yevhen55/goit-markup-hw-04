@@ -380,9 +380,31 @@ ul {
     color: var(--second-text-color);
 }
 
+/* постоянные клиенты  */
+.container .clients {display: flex;
 
+}
+.list .client {border: 1px solid #AFB1B8;align-content: center;
+    border-radius: 4px;
+     padding-top: 16px;
+     padding-bottom: 16px;
+     padding-left: 32px; 
+     padding-right: 32px;
+    width: 170px;
+    height: 92px;
+    }
 
-/* портфолио  */
+.list .client+.client{ margin-left: 30px;}
+
+.user_client .icon {
+    fill: #AFB1B8;
+}
+.user_client:hover,
+.user_client:focus{
+    color: var(--focus-hover-active-color);
+}
+
+    /* портфолио  */
 
 /* btn */
 .list-btn {justify-content: center;display: flex; margin-bottom: 50px;}
