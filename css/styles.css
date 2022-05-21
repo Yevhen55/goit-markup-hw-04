@@ -123,25 +123,27 @@ ul {margin: 0; padding: 0;
     display: flex;
     align-items: center;
 }
-.auth-nav .link {
-    color: var(--second-text-color);
-}
+ .auth-nav .link {
+    color: var(--second-text-color);fill:var(--second-text-color) ;
+}  
 .auth-nav .link {white-space: nowrap;}
+.auth-nav .link:hover,
+.auth-nav .link:focus{
+    fill: currentColor;
+}
+
 
 /* студия  */
 /* btn */
 
 .overlay {height: 600px;
-max-width: 1600px;
-margin-left: auto; margin-right: auto;
+max-width:1600px;
+margin-left:auto; margin-right:auto;
 background-image:linear-gradient(
-    to right , rgba(47, 48, 58, 0.4), 
-    rgba(47, 48, 58, 0.4)) , url(../image/holst.jpg) ;
-background-position: center;
-
-background-size: cover;
-
-} 
+to right, rgba(47, 48, 58, 0.4), 
+rgba(47, 48, 58, 0.4)) , url(../image/holst.jpg) ;
+background-position:center;
+background-size:cover;} 
 
 
 
@@ -384,7 +386,7 @@ ul {
 .container .clients {display: flex;
 
 }
-.list .client {border: 1px solid #AFB1B8;align-content: center;
+ .list .client {border: 1px solid #AFB1B8;align-items: center; 
     border-radius: 4px;
      padding-top: 16px;
      padding-bottom: 16px;
@@ -392,16 +394,16 @@ ul {
      padding-right: 32px;
     width: 170px;
     height: 92px;
+    fill:#AFB1B8 ;
     }
 
 .list .client+.client{ margin-left: 30px;}
 
-.user_client .icon {
-    fill: #AFB1B8;
-}
-.user_client:hover,
-.user_client:focus{
-    color: var(--focus-hover-active-color);
+
+.client:hover,
+.client:focus{
+    fill:var(--focus-hover-active-color);
+    border-color: var(--focus-hover-active-color);
 }
 
     /* портфолио  */
