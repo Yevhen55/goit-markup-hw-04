@@ -484,8 +484,8 @@ fill: #AFB1B8;}
 
 .cards .headline {margin: 0;}
 .cards .desc {margin: 0;}
-.cards {border-left: 1px solid #EEEEEE; border-bottom: 1px solid #EEEEEE; border-right: 1px solid #EEEEEE}
-.cards {padding-top: 20px; padding-right: 24px; padding-bottom: 20px; padding-left: 24px;}
+/* .cards {border-left: 1px solid #EEEEEE; border-bottom: 1px solid #EEEEEE; border-right: 1px solid #EEEEEE} */
+.cards {padding-top: 20px; padding-right: 24px; padding-bottom: 20px; padding-left: 24px;}  
 .container .menu {margin-bottom: 0;}
 .list .headline {
     font-family: 'Roboto';
@@ -494,23 +494,32 @@ fill: #AFB1B8;}
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    color:var(--primary-text-color)
 }
 
 .list .desc {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
 }
 
+.more {text-decoration: none;}
+.border{border-left: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE}
+
+.border:hover,
+.border:focus{background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);}    
 
 
 
-/* footer */
+    /* footer */
 .address {margin-top: 20px;}
 
 .footer {padding-top: 60px; padding-bottom: 60px;}
@@ -555,7 +564,25 @@ fill: #AFB1B8;}
 margin-top: 0;margin-bottom: 20px;}
 
 .list-icon {display: flex;}
-.follow-item {width: 44px;height: 44px;}
-.footer-icon.follow-item+.follow-item{margin-right: 10px;}
-.footer-icon{fill:var(--backgroundcolor-team)}
-.folow-link{background-color: background: rgba(255, 255, 255, 0.1);;}
+.follow-item {display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1)
+}
+.footer-icon {
+    fill: var(--backgroundcolor-team);
+}
+.follow-item:hover,
+.follow-item:focus{
+    background-color: var(--focus-hover-active-color);
+}
+
+.follow-link{
+    height: 20px;
+}
+.list-icon .follow-item+.follow-item {margin-left: 10px;}
+.fot{display: flex; justify-content: flex-start;}
+.footer-ico{margin-left: 70px;}
