@@ -31,7 +31,7 @@ ul {margin: 0; padding: 0;
 /*логотип  */
 
 
-.header-list {border-bottom: 1px  solid var(--second-text-color);}
+.header-list {border-bottom: 1px  solid #ECECEC;}
 .container {margin: 0 auto; padding-left: 15px;padding-right: 15px; width: 1200px;}
  .nav .logo { margin-top: 25px; margin-bottom: 25px;
     margin-right: 93px;
@@ -132,19 +132,23 @@ ul {margin: 0; padding: 0;
     fill: currentColor;
 }
 .icon-nav {margin-right: 10px;}
-
+.auth-nav .link{display: flex;align-items: center;
+}
 
 /* студия  */
 /* btn */
 
-.overlay {height: 600px;
+.hero {
+padding: 200px 0 ;    
 max-width:1600px;
 margin-left:auto; margin-right:auto;
 background-image:linear-gradient(
 to right, rgba(47, 48, 58, 0.4), 
 rgba(47, 48, 58, 0.4)) , url(../image/holst.jpg) ;
 background-position:center;
-background-size:cover;} 
+background-size:cover;
+background-repeat: no-repeat;
+} 
 
 
 
@@ -168,11 +172,7 @@ background-size:cover;}
     padding-right: 0;
 }
 
-.hero {
-   
-    padding-top:0;
-    padding-bottom: 0;
-}
+
 
 .hero .btn {
     margin-left: auto;
@@ -242,37 +242,20 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
 }
-
-.icon::before {
-    display: block;
-    content: "";
+.icon-benefits {
+    background-color: #F5F4FA;
+    border-radius: 4px;
     height: 120px;
-    background: #F5F4FA;
-        border-radius: 4px;
-        background-image: url() ;
-        /* background-size: contain ; */
-        background-repeat: no-repeat;
+    display: flex;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 30px;
-        background-position: center;
-}
-.antena::before{
-    background-image: url(../images/antenna.png);
-    
-}
-
-.time::before{
-    background-image: url(../images/clock.png);
-}
-.diagramma::before{
-    background-image: url(../images/diagramma.png);
-}
-
- .astronaft::before{
-    background-image: url(../images/astronaut.png);
 }
 .list-benefits .items+.items {
-    margin-left: 30px;
-}
+    margin-left: 30px;}
+
+
+
 
 .items .subject {
     margin-top: 0;
@@ -403,22 +386,25 @@ fill: #AFB1B8;}
 .container .clients {display: flex;
 
 }
- .list .client {border: 1px solid #AFB1B8;align-items: center; 
-    border-radius: 4px;
-     padding-top: 16px;
-     padding-bottom: 16px;
-     padding-left: 32px; 
-     padding-right: 32px;
+ .list .client {
+    
     width: 170px;
     height: 92px;
-    fill:#AFB1B8 ;
+     
     }
+.user_client{min-height: 92px;
+    justify-content: center;
+    display: flex;
+        border: 1px solid #AFB1B8;
+        align-items: center;
+        border-radius: 4px;
+        fill: #AFB1B8}
 
 .list .client+.client{ margin-left: 30px;}
 
 
-.client:hover,
-.client:focus{
+.user_client:hover,
+.user_client:focus{
     fill:var(--focus-hover-active-color);
     border-color: var(--focus-hover-active-color);
 }
@@ -454,7 +440,7 @@ fill: #AFB1B8;}
 .btn:hover,
 .btn:focus {
     background-color: var(--focus-hover-active-color);
-    color: var(--text-footer-textbtn)
+    color: var(--text-footer-textbtn);box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* станция сортировка ))) */
@@ -564,7 +550,7 @@ fill: #AFB1B8;}
 margin-top: 0;margin-bottom: 20px;}
 
 .list-icon {display: flex;}
-.follow-item {display: flex;
+.follow-link {display: flex;
     align-items: center;
     justify-content: center;
     width: 44px;
@@ -575,14 +561,13 @@ margin-top: 0;margin-bottom: 20px;}
 .footer-icon {
     fill: var(--backgroundcolor-team);
 }
-.follow-item:hover,
-.follow-item:focus{
+.follow-link:hover,
+.follow-link:focus{
     background-color: var(--focus-hover-active-color);
 }
 
-.follow-link{
-    height: 20px;
-}
+
+
 .list-icon .follow-item+.follow-item {margin-left: 10px;}
-.fot{display: flex; justify-content: flex-start;}
+.fot{display: flex; align-items: center;}
 .footer-ico{margin-left: 70px;}
